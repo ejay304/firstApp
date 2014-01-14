@@ -47,7 +47,7 @@ class MatchesController < ApplicationController
 
   #POST /matches/matchsheet/1
   def matchsheet
-    debug.info "Params = #{params}"
+    logger.info "Params = #{params}"
     params["facts"].each do |f|
       @match.facts << Fact.new(f)
     end
