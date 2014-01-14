@@ -14,6 +14,7 @@ gem 'mysql2'
   gem 'uglifier'
   gem 'therubyracer'
   gem 'rspec-rails'
+  gem "rails-erd"
 
 
 

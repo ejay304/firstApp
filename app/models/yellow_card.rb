@@ -1,0 +1,2 @@
+class YellowCard < Fact
+end
