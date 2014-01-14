@@ -1,2 +1,0 @@
-class YellowCard < Fact
-end
