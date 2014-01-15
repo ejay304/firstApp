@@ -1,3 +1,15 @@
+# ************************************************************************************
+# timekeepers_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité chronométreur
+# ce ficheir gérer les utilisateurs qui se connecte via la tablette
+# ************************************************************************************
 class TimekeepersController < ApplicationController
   before_action :set_timekeeper, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate

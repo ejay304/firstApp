@@ -1,3 +1,15 @@
+# ************************************************************************************
+# matches_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité match
+#     
+# ************************************************************************************
 class MatchesController < ApplicationController
   before_action :set_match, only: [:show, :edit, :update, :destroy, :matchsheet]
   before_filter :authenticate

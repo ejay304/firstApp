@@ -1,3 +1,15 @@
+# ************************************************************************************
+# gyms_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité salle de sport
+#     
+# ************************************************************************************
 class GymsController < ApplicationController
   before_action :set_gym, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate

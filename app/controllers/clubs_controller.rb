@@ -1,3 +1,15 @@
+# ************************************************************************************
+# clubs_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité club
+#     
+# ************************************************************************************
 class ClubsController < ApplicationController
   before_action :set_club, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate

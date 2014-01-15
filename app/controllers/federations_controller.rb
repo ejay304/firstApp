@@ -1,3 +1,15 @@
+# ************************************************************************************
+# federations_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité fédérations
+#     
+# ************************************************************************************
 class FederationsController < ApplicationController
   before_action :set_federation, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate

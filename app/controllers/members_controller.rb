@@ -1,7 +1,18 @@
+# ************************************************************************************
+# members_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité membre
+#     
+# ************************************************************************************
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate
-
 
   # GET /members
   def index

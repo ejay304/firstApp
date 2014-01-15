@@ -1,3 +1,15 @@
+# ************************************************************************************
+# facts_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité faits
+#     
+# ************************************************************************************
   class FactsController < ApplicationController
   before_filter :authenticate
 

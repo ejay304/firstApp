@@ -1,3 +1,15 @@
+# ************************************************************************************
+# teams_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité équipe
+#     
+# ************************************************************************************
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show, :edit, :update, :destroy, :getPlayers]
   before_filter :authenticate

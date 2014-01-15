@@ -1,3 +1,16 @@
+# ************************************************************************************
+# championships_controller.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le contrôleur pour l'entité championnat
+#     
+# ************************************************************************************
+
 class ChampionshipsController < ApplicationController
   before_action :set_championship, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate
