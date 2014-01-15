@@ -12,8 +12,8 @@
         <th>But 7m</th>
         <th>Avert.</th>
         <th>Total 2'</th>
-        <th>Carton rouge</th>
-        <th>Matchs</th>
+        <th>Cartons jaunes</th>
+        <th>Cartons rouge<s/th>
         <th>Buts/match</th>
       </tr>
     </thead>
@@ -36,13 +36,17 @@
             <%= player.foul %> 
           </td>
           <td>
-            0
+            <%= player.yellow_card %> 
           </td>
           <td>
-            
+            <%= player.red_card %> 
           </td>
           <td>
-            
+            <% if @nbMatches != 0 %>
+              <%= player.goal / Float(@nbMatches) %>
+            <% else %>
+              0
+            <% end %>
           </td>
         </tr>
     <% end %>

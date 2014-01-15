@@ -16,7 +16,7 @@ class StatsController < ApplicationController
 
 	def show_future_matches
 		@championship = Championship.find_by_name(params[:championship_name])
-		@matches = MatchTeams.where(championship_id: @championship.id)
+		@matches = MatchTeams.where(championship_id: @championship.id).order("date ASC")
 	end
 
 	def show_team
@@ -24,6 +24,7 @@ class StatsController < ApplicationController
 		@team = Team.find_by_name(params[:team_name])
 		@coach = TeamCoach.find_by_team_id(@team.id)
 		@players = ShowTeam.where(championship_id: @championship.id).where(team_id: @team.id)
+		@nbMatches = MatchTeams.where(championship_id: @championship.id).where('(team1_id = ? OR team2_id = ?) AND homeScore IS NOT NULL AND awayScore IS NOT NULL', @team.id, @team.id).count
 	end
 
 	def show_match

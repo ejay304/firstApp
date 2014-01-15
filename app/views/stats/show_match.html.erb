@@ -32,14 +32,32 @@
             <%= player.participant_name %> <%= player.participant_firstname %>
           </td>
           <td>
-            <%= @players1.find_by_participant_id(player.participant_id).goal if not @players1.find_by_participant_id(player.participant_id).nil? %>
+        <% 
+          stat = @players1.find_by_participant_id(player.participant_id)
+          if stat.nil? 
+        %>
+            0
           </td>
           <td>
-            <%= @players1.find_by_participant_id(player.participant_id).foul if not @players1.find_by_participant_id(player.participant_id).nil? %>
+            0
           </td>
           <td>
             Non
           </td>
+        <% else %>
+            <%= stat.goal %>
+          </td>
+          <td>
+            <%= stat.foul %>
+          </td>
+          <td>
+            <% if stat.yellow_card > 0 or stat.red_card > 0 %>
+              Oui
+            <% else %>
+              Non
+            <% end %>
+          </td>
+        <% end %>
         </tr>
       <% end %>
     </tbody>
@@ -61,14 +79,32 @@
             <%= player.participant_name %> <%= player.participant_firstname %>
           </td>
           <td>
-            <%= @players2.find_by_participant_id(player.participant_id).goal if not @players2.find_by_participant_id(player.participant_id).nil? %>
+        <% 
+          stat = @players2.find_by_participant_id(player.participant_id)
+          if stat.nil? 
+        %>
+            0
           </td>
           <td>
-            <%= @players2.find_by_participant_id(player.participant_id).foul if not @players2.find_by_participant_id(player.participant_id).nil? %>
+            0
           </td>
           <td>
             Non
           </td>
+        <% else %>
+            <%= stat.goal %>
+          </td>
+          <td>
+            <%= stat.foul %>
+          </td>
+          <td>
+            <% if stat.yellow_card > 0 or stat.red_card > 0 %>
+              Oui
+            <% else %>
+              Non
+            <% end %>
+          </td>
+        <% end %>
         </tr>
       <% end %>
     </tbody>
