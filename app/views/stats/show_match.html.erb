@@ -10,7 +10,7 @@
     image_tag "#{@match.team2_name}.png", :alt => "Logo de l'équipe #{@match.team2_name}"
   end %> 
 <br/>
-  <%= "#{@match.team2_name} #{@match.homeScore}:#{@match.awayScore} #{@match.team2_name}" %><br/>
+  <%= "#{@match.team1_name} #{@match.homeScore}:#{@match.awayScore} #{@match.team2_name}" %><br/>
  <br/>
  <%= "#{@coach1.name} #{@coach1.firstname}" if not @coach1.nil? %> /   <%= "#{@coach2.name} #{@coach2.firstname}" if not @coach2.nil? %>
  </div>
