@@ -1,3 +1,15 @@
+# ************************************************************************************
+# match.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le modèle pour l'entité match
+#     
+# ************************************************************************************
 class Match < ActiveRecord::Base
   belongs_to :championship
   belongs_to :gym

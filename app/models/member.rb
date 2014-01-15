@@ -1,3 +1,15 @@
+# ************************************************************************************
+# member.rb  
+#
+# @author Crescenzio Fabio
+# @author Fresco Alain
+# @author Therisod Romain
+# @author Triki Mohamed
+# @author Walpen Laurian
+# 
+# Ce fichier définit le modèle pour les membres et gère le hashage du mot de passe 
+#     
+# ************************************************************************************
 class Member < ActiveRecord::Base
   belongs_to :federation
 
