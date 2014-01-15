@@ -60,6 +60,8 @@ FirstApp::Application.routes.draw do
   get "/422", :to => "errors#unacceptable"
   get "/500", :to => "errors#internal_error"
 
+  get '/appAndroid', :to => redirect('/Chron_Stat_Android.apk')
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
